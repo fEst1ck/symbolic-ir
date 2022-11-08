@@ -1,0 +1,9 @@
+{
+    zero = 0;
+    fresh x: int;
+    cond = x < zero;
+    if (cond) {
+        x = zero - x;
+    }
+    debug x;
+}

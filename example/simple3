@@ -1,0 +1,21 @@
+{
+    fresh p: bool;
+    fresh q: bool;
+    fresh r: bool;
+    if (p) {
+        x = 1;
+    } else {
+        x = 3;
+    }
+    if (q) {
+        y = 0;
+    } else {
+        y = 1;
+    }
+    if (r) {
+        one = 1;
+        x = x + one;
+    }
+    z = x + y;
+    debug z;
+}

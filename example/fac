@@ -1,0 +1,19 @@
+{
+    fresh x: int;
+    fuel = 3;
+    res = 1;
+    zero = 0;
+    one = 1;
+    x_pos = x > zero;
+    fuel_pos = fuel > zero;
+    cond = fuel_pos && x_pos;
+    while (cond) {
+        res = res * x;
+        x = x - one;
+        fuel = fuel - one;
+        x_pos = x > zero;
+        fuel_pos = fuel > zero;
+        cond = fuel_pos && x_pos;
+    }
+    debug res;
+}

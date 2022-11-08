@@ -1,0 +1,14 @@
+{
+    fresh c: int;
+    fuel = 3;
+    res = 0;
+    zero = 0;
+    one = 1;
+    cond = fuel > zero;
+    while (cond) {
+        res = res + c;
+        fuel = fuel - one;
+        cond = fuel > zero;
+    }
+    debug res;
+}
